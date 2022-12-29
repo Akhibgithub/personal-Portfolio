@@ -1,0 +1,461 @@
+:root {
+  --dark-navy: #020c1b;
+  --navy: #0a192f;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --blue: #57cbff;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 1.1rem;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+  --border-radius: 4px;
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+  --tab-height: 42px;
+  --tab-width: 120px;
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --hamburger-width: 30px;
+  --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+  --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+  --ham-after: bottom 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ham-after-active: bottom 0.1s ease-out,
+    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+html {
+  scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--dark-navy);
+}
+.links {
+  font-family: var(--font-mono);
+}
+
+.navBar {
+  background-color: var(--navy);
+  transition: var(--transition);
+  backdrop-filter: blur(10px);
+  background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  z-index: 10;
+}
+.nanNum {
+  color: var(--green);
+  font-family: var(--font-mono);
+}
+.Container {
+  background-color: var(--navy);
+  width: 100%;
+  min-height: 100%;
+}
+.Sub-Container {
+  background-color: var(--navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 5rem;
+  width: 75%;
+  height: 100vh;
+}
+.main-heading {
+  color: var(--green);
+  font-family: var(--font-mono);
+}
+.Big-heading {
+  margin: 0px;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
+  color: var(--light-slate);
+}
+.eEjAsd {
+  margin-top: 10px;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
+  color: var(--slate);
+}
+.eEjAsb {
+  margin: 20px 0px 0px;
+  max-width: 540px;
+  color: var(--slate);
+  font-size: var(--fz-lg);
+}
+
+.left-container {
+  display: flex;
+  top: 23.8rem;
+  left: 0.1rem;
+  position: fixed;
+  flex-direction: column;
+  color: white;
+  width: 9.375rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.logos {
+  margin: 10px;
+}
+.logos > a {
+  text-decoration: none;
+  color: white;
+}
+.linkin {
+  margin-bottom: 1.3rem;
+}
+.logo-trans {
+  transition: var(--transition);
+}
+.logo-trans:hover {
+  transform: translateY(-5px);
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  writing-mode: vertical-rl;
+  width: 9.375rem;
+  position: fixed;
+  right: 0.1rem;
+  top: 21rem;
+  z-index: 2;
+}
+.right-container > a {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  color: var(--slate);
+  margin-bottom: 1.4rem;
+}
+.right-container > a:hover {
+  color: var(--green);
+}
+.About-container {
+  background-color: var(--navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.About-sub-container {
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+}
+.About-sub-container > div > h1 {
+  color: var(--light-slate);
+  margin: 0px;
+  font-size: clamp(20px, 8vw, 40px);
+  font-weight: 600;
+}
+.line {
+  background-color: var(--light-slate);
+  width: 300px;
+  height: 1px;
+  position: relative;
+  left: 18rem;
+  bottom: 1.3rem;
+}
+.verLines {
+  background-color: var(--light-slate);
+  width: 1px;
+  height: 100px;
+}
+.praragh {
+  margin: 40px 0px 10px;
+  max-width: 540px;
+  color: var(--slate);
+  font-size: var(--fz-lg);
+}
+.skills > ul > li {
+  list-style: none;
+}
+.lilogo {
+  color: var(--green);
+}
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  position: absolute;
+  right: 5rem;
+  top: 7rem;
+  z-index: 1;
+}
+.profile-border {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 4rem;
+  top: 8rem;
+  border: 3px solid var(--green);
+}
+.wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  color: var(--green);
+}
+.work {
+  background-color: var(--navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.work-sub-container {
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+}
+.work-head {
+  color: var(--light-slate);
+  margin: 0px;
+  font-size: clamp(20px, 8vw, 40px);
+  font-weight: 600;
+}
+.linetwo {
+  position: absolute;
+  top: 1.7rem;
+  left: 32rem;
+}
+.projects > h6 {
+  color: var(--green);
+  margin-top: 4rem;
+}
+.projects > a {
+  text-decoration: none;
+  color: var(--light-slate);
+  font-size: var(--fz-xxl);
+  font-weight: 600;
+}
+.projects > a:hover {
+  color: var(--green);
+}
+.caldesc {
+  margin: 40px 0px 10px;
+  padding: 17px;
+  border-radius: 7px;
+  max-width: 400px;
+  color: var(--slate);
+  background-color: var(--light-navy);
+}
+.caldesc > p {
+  margin: 0%;
+  font-size: var(--fz-lg);
+}
+
+.cal-tech > ul > li {
+  display: inline;
+  margin-right: 10px;
+  max-width: 400px;
+  list-style: none;
+  color: var(--lightest-slate);
+  font-family: var(--font-mono);
+}
+
+.project-cal-Img {
+  position: absolute;
+  right: 3rem;
+  top: 10rem;
+}
+.Img-border {
+  border: 3px solid var(--green);
+  position: absolute;
+  right: 2rem;
+  top: 11rem;
+  width: 500px;
+  height: 300px;
+}
+.TodoApp {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--navy);
+  position: relative;
+  padding: 0px 9.375rem;
+}
+.E-Commerce {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--navy);
+  padding: 0px 9.375rem;
+}
+.Contact-container {
+  background-color: var(--navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.contc-sub-cont {
+  text-align: center;
+  width: 50%;
+  height: 80%;
+  position: relative;
+}
+
+.cont-heading {
+  margin: 0px 0px 10px;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--lightest-slate);
+  line-height: 1.1em;
+}
+.copy-right {
+  font-family: var(--font-mono);
+  color: var(--lightest-slate);
+  margin-top: 8rem;
+}
+.copy-right:hover {
+  color: var(--green);
+}
+.button-icons {
+  display: none;
+}
+.contact-text {
+  color: var(--slate);
+  font-size: var(--fz-lg);
+}
+
+@media screen and (max-width: 768px) {
+  .left-container {
+    padding: 0px 50px;
+  }
+  .logos,
+  .verLines {
+    display: none;
+  }
+
+  .right-container a {
+    display: none;
+  }
+  .Sub-Container {
+    width: 100%;
+    height: 100vh;
+  }
+  .content {
+    width: 80%;
+    height: 80vh;
+  }
+  .About-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .About-sub-container {
+    width: 80%;
+    height: 100vh;
+  }
+  .line {
+    display: none;
+  }
+  .profile,
+  .profile-border {
+    display: none;
+  }
+  .project-cal-Img {
+    display: none;
+  }
+  .Img-border {
+    display: none;
+  }
+  .button-icons {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 10rem;
+    height: 2rem;
+    margin-top: 3rem;
+  }
+  .button-icons > div > a {
+    color: #e6f1ff;
+  }
+}
+@media screen and (max-width: 990px) {
+  .left-container {
+    padding: 0px 50px;
+  }
+  .logos,
+  .verLines {
+    display: none;
+  }
+  .right-container a {
+    display: none;
+  }
+  .Sub-Container {
+    width: 100%;
+    height: 100vh;
+  }
+  .content {
+    width: 80%;
+    height: 80vh;
+  }
+  .About-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .About-sub-container {
+    width: 80%;
+    height: 100vh;
+  }
+  .line {
+    display: none;
+  }
+  .profile,
+  .profile-border {
+    display: none;
+  }
+  .project-cal-Img {
+    display: none;
+  }
+  .Img-border {
+    display: none;
+  }
+}

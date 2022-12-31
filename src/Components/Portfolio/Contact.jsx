@@ -65,7 +65,7 @@ const Contact = () => {
             </a>
           </div>
       </div>
-        <p className="copy-right">Designed & Built by Shaikh Aaqib</p>
+        <p className="copy-right">&copy; &reg; Designed & Built by Shaikh Aaqib</p>
       </div>
     </div>
   );

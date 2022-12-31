@@ -8,7 +8,7 @@ const WorkProjThree = () => {
         <div>
           <div className="projects">
             <h6>Featured Project</h6>
-            <a href="">E-Commerce Website With Reactjs & Redux.js</a>
+            <a href="">E-Commerce Website With Reactjs & Reduxjs</a>
           </div>
           <div className="caldesc">
             <p>

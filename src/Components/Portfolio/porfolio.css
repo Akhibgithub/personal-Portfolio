@@ -381,6 +381,10 @@ body {
     height: 70vh;
   }
   .About-sub-container {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
     width: 80%;
     height: 140vh;
   }
@@ -388,17 +392,22 @@ body {
     display: none;
   }
   .profile img {
+    position: absolute;
     z-index: 1;
     height: 10rem;
     width: 10rem;
+    top: .5rem;
+    left: 3.5rem;
   }
   .profile-border {
+    position: absolute;
     height: 10rem;
     width: 10rem;
+    top: 1.5rem;
+    left: 4.5rem;
   }
   .profile-container{
-    position: absolute;
-    left: 5rem;
+    position: relative;
   }
   .project-cal-Img {
     display: none;
@@ -448,6 +457,7 @@ body {
     height: 140vh;
   }
   .About-sub-container {
+    
     width: 80%;
     height: 140vh;
   }
@@ -455,18 +465,22 @@ body {
     display: none;
   }
   .profile img {
+    position: absolute;
     z-index: 1;
     height: 10rem;
     width: 10rem;
+    top: .5rem;
+    left: 3.5rem;
   }
   .profile-border {
+    position: absolute;
     height: 10rem;
     width: 10rem;
-   
+    top: 1.5rem;
+    left: 4.5rem;
   }
   .profile-container{
     position: relative;
-    top: 1rem;
   }
   .project-cal-Img {
     display: none;

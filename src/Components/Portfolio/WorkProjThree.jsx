@@ -8,11 +8,16 @@ const WorkProjThree = () => {
         <div>
           <div className="projects">
             <h6>Featured Project</h6>
-            <a href="">E-Commerce Website With Reactjs & Reduxjs</a>
+            <a href="https://akhibgithub.github.io/E-Commerce-Project/">
+              E-Commerce Website With Reactjs & Reduxjs
+            </a>
           </div>
           <div className="caldesc">
             <p>
-            Building an e-Commerce application with React & Redux. Covered component basics, rendering various items in components, parent-to-child component communication, Hooks!, forms, REST-API calls with JSON server and basic routing.
+              Building an e-Commerce application with React & Redux. Covered
+              component basics, rendering various items in components,
+              parent-to-child component communication, Hooks!, forms, REST-API
+              calls with JSON server and basic routing.
             </p>
           </div>
           <div></div>
@@ -34,7 +39,7 @@ const WorkProjThree = () => {
           <div className="project-img-container">
             <div className="Img-border"></div>
             <div className="project-cal-Img">
-              <a href="">
+              <a href="https://akhibgithub.github.io/E-Commerce-Project/">
                 <img src={ECommerce} alt="" />
               </a>
             </div>

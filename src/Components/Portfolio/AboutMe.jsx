@@ -52,6 +52,9 @@ const AboutMe = () => {
                     <span className="lilogo">▹</span> JavaScript (ES6+)
                   </li>
                   <li>
+                    <span className="lilogo">▹</span> jQuery
+                  </li>
+                  <li>
                     <span className="lilogo">▹</span> Reactjs
                   </li>
                   <li>

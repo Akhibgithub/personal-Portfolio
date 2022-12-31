@@ -8,7 +8,7 @@ const WorkProjThree = () => {
         <div>
           <div className="projects">
             <h6>Featured Project</h6>
-            <a href="https://akhibgithub.github.io/E-Commerce-Project/">
+            <a href="https://akhibgithub.github.io/E-Commerce-Project/" target={'_blank'}>
               E-Commerce Website With Reactjs & Reduxjs
             </a>
           </div>
@@ -39,7 +39,7 @@ const WorkProjThree = () => {
           <div className="project-img-container">
             <div className="Img-border"></div>
             <div className="project-cal-Img">
-              <a href="https://akhibgithub.github.io/E-Commerce-Project/">
+              <a href="https://akhibgithub.github.io/E-Commerce-Project/" target={'_blank'}>
                 <img src={ECommerce} alt="" />
               </a>
             </div>
